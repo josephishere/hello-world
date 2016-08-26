@@ -1,1 +1,279 @@
-[!DOCTYPE html]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML TEXT Basic Page</title>
+    <meta charset="utf-8" />
+    <style>
+/* 모든 태그의 color 속성에 red 키워드를 적용합니다. */
+        * { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Header -1 tag</h1>
+    <p>Paragraph tag</p>
+    <hr />
+    <a href="#">Anchor tag</a>
+    <i>italic tag</i><br /><br />
+    
+<!--div: block element-->
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+<!--span: inline element-->
+    <span>Lorem ipsum</span>
+    <span>Lorem ipsum</span>
+    <span>Lorem ipsum</span>
+    <span>Lorem ipsum</span>
+    <span>Lorem ipsum</span>
+<!-- form element -->
+    <form>
+        <!--fieldset: 입력양식을 설명하고 그룹핑함-->
+        <fieldset>
+            <legend>입력양식</legend>
+            <table>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input id="name" type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">이메일</label></td>
+                    <td><input id="mail" type="email" /></td>
+                </tr>
+            </table>
+            <input type="submit" />
+        </fieldset><br />
+        
+        <!-- optgroup 선택 옵션을 그룹핑할 때 사용 -->
+        <select>
+            <optgroup label="HTML5">
+                <option>Multimedia Tag</option>
+                <option>Connectivity</option>
+                <option>Device Access</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option>Animation</option>
+                <option>3D Transform</option>
+            </optgroup>
+        </select><br /><br />
+        
+        <!--multiple: 스마트폰에서는 예쁘게 나오지만, 데스크탑에서는 잘 사용하지 않는다.-->
+        <select multiple="multiple">
+            <option>김밥</option>
+            <option>떡볶이</option>
+            <option>순대</option>
+            <option>오뎅</option>
+        </select><br /><br />
+        <select>
+            <option>김밥</option>
+            <option>떡볶이</option>
+            <option>순대</option>
+            <option>오뎅</option>
+        </select><br /><br />
+        <textarea rows="5">Hello textarea
+Hello textarea</textarea><br />
+        <label for="id">아이디</label><br />
+        <input id="id" type="text" placeholder="input your ID"/><br />
+        <input type="button" value="button"/><br />
+        <input type="checkbox" /><br />
+        <input type="file" /><br />
+        <input type="hidden" /><br />
+        <input type="image" /><br />
+        <input type="password" /><br />
+        <input type="radio" /><br />
+        <input type="reset" /><br />
+        <input type="submit" /><br />
+        <input type="color" /><br />
+        <input type="date" /><br />
+        <input type="datetime" /><br />
+        <input type="datetime-local" /><br />
+        <input type="email" /><br />
+        <input type="month" /><br />
+        <input type="number" /><br />
+        <input type="range" /><br />
+        <input type="search" /><br />
+        <input type="tel" /><br />
+        <input type="time" /><br />
+        <input type="url" /><br />
+        <input type="week" /><br /><br />
+    </form>
+    <form>
+        <input type="text" name="name" /><br />
+        <input type="password" name="password" /><br />
+        <input type="file" name="file" /><br />
+        <input type="submit" /><br /><br />
+    </form>
+    
+    <form>
+        <input type="text" name="search" />
+        <input type="submit" />
+    </form>
+    
+    <br />
+    
+<!-- video element -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0T-U6_2dEeQ" frameborder="0" allowfullscreen></iframe>
+    
+    <br /><br />
+
+<!-- audio element -->
+    <audio controls="controls">
+        <source src="media/02%20Gold%20Digger.mp3" type="audio/mp3" />
+    </audio>
+    
+    <br />
+    
+<!-- img element -->
+    <img src="images/circle_300.png" alt="Joseph's circular profile image" width="300"  />
+    <img src="http://dummyimage.com/300x300" alt="Joseph's rectangle profile image" width="300"  />
+    
+<!-- Table colspan, rowspan -->
+    <table border="1">
+        <tr>
+            <th colspan="3">Table Header</th>
+            <th rowspan="3">Table Header</th>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td rowspan="2">Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </table>
+    
+    <br />    
+
+<!-- Table advance -->
+    <table border="1">
+        <caption>Caption</caption>
+        <colgroup>
+            <col span="2" style="background: red" />
+            <col style="background: blue" />
+        </colgroup>
+        <thead style="background: green">
+            <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tbody>
+        <tfoot style="background: yellow">
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tfoot>
+    </table>
+ 
+    <br />
+    
+<!-- Table basic -->
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 1</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+    
+    <br />
+    
+    
+    <br />
+
+<!-- Grammar In Use example -->
+    <h3>UNIT <em>10</em></h3>
+    <h1>Present Perfect Continuous and Present Perfect Simple <em>(I have been doing and I have done)</em></h1>
+    <hr />
+    <h2>A</h2>
+    <p>Compare these examples:</p>
+    <table border="1">
+        <tr>
+            <th>My hands are very dirty. I<strong>'ve been fixing</strong> the car.</th>
+            <th>The car is OK again now. I<strong>'ve fixed</strong> it.</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>She<strong>'s been eating</strong> too much recently. She should eat less.</li>
+                    <li>It's nice to see you again. What <strong>have</strong> you <strong>been doing</strong> since the last time we saw you?</li>
+                    <li>Where have you been? <strong>Have</strong> you <strong>been playing</strong> tennis?</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Somebody <strong>has eaten</strong> all my candy! The box is empty.</li>
+                    <li>Where's the book I gave you? <strong>What have</strong> you <strong>done</strong> with it?</li>
+                    <li><strong>Have</strong> you ever <strong>played</strong> tennis?</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+<!-- Definition List -->
+    <dl>
+        <dl>
+            <dt>HTML5</dt>
+            <dd>Multimedia Tag</dd>
+            <dd>Connectivity</dd>
+            <dd>Device Access</dd>
+            
+            <dt>Milk</dt>
+            <dd>Animation</dd>
+            <dd>3D Transition</dd>
+        </dl>
+    </dl>
+    
+<!-- List -->
+    <ul>
+        <li>HTML5
+            <ol>
+                <li>Multimedia</li>
+                <li>Connectivity</li>
+                <li>Device Access</li>
+            </ol>
+        </li>
+        <li>CSS3
+            <ul>
+                <li>Animation
+                    <ol>
+                        <li>2D Animation</li>
+                        <li>3D Animation</li>
+                    </ol>
+                </li>
+                <li>3D Transform</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
